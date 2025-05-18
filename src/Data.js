@@ -1,14 +1,14 @@
 const Data = {
-  WebsiteTitle: "Portfolio | Artists",
-  HeaderTitle: "Artist's Portfolio",
-  FooterText: "© 2024 Artist's Portfolio. All rights reserved.",
+  WebsiteTitle: "Rebecca Zhang",
+  HeaderTitle: "RebbsArt",
+  FooterText: "© 2025 Rebbeca Zhang's Portfolio. All rights reserved.",
   AboutEmail: "Your Email Address",
   AboutEmailSubject: "Subject of the Email",
   AboutHeading: "About Me",
   AboutTextParagraph1:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Hey everyone! My name is Rebecca Zhang. I am an artist and designer based in the United States.",
   AboutTextParagraph2:
-    " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "I currently study at Alfred University",
   AboutButtonText: "Say Hey!",
 };
 

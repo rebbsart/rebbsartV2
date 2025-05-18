@@ -8,12 +8,19 @@ function Footer() {
       <div className={FooterCSS.container}>
         <p>{data.FooterText}</p>
         <p style={{ marginTop: "5px", fontSize: "12px" }}>
-          Designed and developed by{" "}
+          Made with ❤️ {" "}
           <a
-            href="https://github.com/rakshixh"
+            href="https://github.com/rebbsart"
             style={{ textDecoration: "none", color: "#F4A261" }}
           >
-            rakshixh
+            Rebbsart
+          </a>
+          {" "}and{" "}
+          <a
+            href="https://github.com/rhyzhang"
+            style={{ textDecoration: "none", color: "#F4A261" }}
+          >
+            Rhyzhang
           </a>
         </p>
       </div>

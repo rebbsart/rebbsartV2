@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    color: white;
+    color: #5D4037; 
     font-size: 24px;
     cursor: pointer;
     margin: 40px;
@@ -49,6 +49,6 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #5D4037; 
     text-decoration: none;
 }

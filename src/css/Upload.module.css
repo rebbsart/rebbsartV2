@@ -83,6 +83,12 @@
     cursor: pointer;
 }
 
+/* Updated Upload section background and text color */
+.upload {
+    background-color: #FFDAB9; 
+    color: #5D4037;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 15px;
