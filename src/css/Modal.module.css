@@ -15,7 +15,7 @@
 
 /* Modal content styling */
 .modalContent {
-  background: #FFDAB9; 
+  background: #FAF9F6; 
   color: #5D4037;
   max-width: 1000px;
   width: 90%;
@@ -59,7 +59,7 @@
 .modalImageContainer {
   width: 100%;
   overflow: hidden;
-  background: #FFDAB9; 
+  background: #FAF9F6; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,7 @@
 /* Project info styling */
 .projectInfo {
   padding: 25px 30px;
-  background: #FFDAB9; 
+  background: #FAF9F6; 
   overflow-y: auto;
   max-height: 40vh;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
