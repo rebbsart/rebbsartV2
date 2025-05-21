@@ -8,7 +8,7 @@ function Footer() {
       <div className={FooterCSS.container}>
         <p>{data.FooterText}</p>
         <p style={{ marginTop: "5px", fontSize: "12px" }}>
-          Made with ❤️ {" "}
+          Made with ❤️ by {" "}
           <a
             href="https://github.com/rebbsart"
             style={{ textDecoration: "none", color: "#F4A261" }}
