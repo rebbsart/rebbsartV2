@@ -8,3 +8,6 @@ Sed sed eleifend turpis. Duis nec mauris euismod dolor gravida iaculis eu eu mi.
 Duis fringilla metus ut mi placerat luctus. Sed interdum erat tortor, et porttitor ante sodales et. Ut ornare augue id fringilla fringilla. Sed consequat accumsan nunc rutrum bibendum. Etiam congue lobortis ultrices. Etiam ligula massa, venenatis nec nunc sit amet, convallis tincidunt tortor. Sed orci velit, sollicitudin vel ornare at, venenatis quis sapien.
 
 Morbi dapibus, mi in placerat fermentum, diam sem lacinia sem, sit amet molestie nisl sapien et massa. Integer hendrerit nulla sapien. Vestibulum eget luctus massa, eget feugiat magna. Mauris id sem vitae tortor tincidunt luctus. Aliquam scelerisque ullamcorper elit. Duis nulla ex, dictum ut fringilla at, malesuada a tortor. Cras non dignissim justo.
+
+![Test Image](./process/04_fengshui_cover.jpg)
+![Test Image](./process/01_.jpg)

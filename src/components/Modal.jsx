@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import ModalCSS from "../css/Modal.module.css";
 import { motion } from "framer-motion";
-import { getProjectMarkdown, extractTitle } from "../utils/markdownUtils";
+import { getProjectMarkdown, extractTitle, processMarkdownImagePaths } from "../utils/markdownUtils";
 
 function Modal({ project, onClose, onPrevious, onNext }) {
   const [markdown, setMarkdown] = useState("");
@@ -14,7 +14,8 @@ function Modal({ project, onClose, onPrevious, onNext }) {
       try {
         setLoading(true);
         const md = await getProjectMarkdown(project.index);
-        setMarkdown(md);
+        const processedMarkdown = processMarkdownImagePaths(md, project.index);
+        setMarkdown(processedMarkdown);
         setTitle(extractTitle(md));
       } catch (error) {
         console.error("Error loading project details:", error);
