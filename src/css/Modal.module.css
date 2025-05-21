@@ -89,6 +89,29 @@
   max-height: 95vh; /* Changed from 45vh to 95vh */
   border-left: 1px solid rgba(0, 0, 0, 0.05); /* Changed from border-top to border-left */
   position: relative; /* Added for proper positioning */
+  
+  /* Custom scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+/* Custom scrollbar for Webkit browsers (Chrome, Safari, newer Edge) */
+.projectInfo::-webkit-scrollbar {
+  width: 6px;
+}
+
+.projectInfo::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.projectInfo::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.projectInfo::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .markdownContent h1 {
