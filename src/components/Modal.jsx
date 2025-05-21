@@ -26,6 +26,20 @@ function Modal({ project, onClose, onPrevious, onNext }) {
     loadProjectDetails();
   }, [project.index]);
   
+  // Disable body scrolling when modal is open
+  useEffect(() => {
+    // Save the original overflow style
+    const originalOverflow = document.body.style.overflow;
+    
+    // Disable scrolling on the body
+    document.body.style.overflow = 'hidden';
+    
+    // Re-enable scrolling when component unmounts
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, []);
+  
   return (
     <motion.div 
       className={ModalCSS.overlay} 

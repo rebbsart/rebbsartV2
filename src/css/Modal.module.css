@@ -9,8 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000; /* Increased z-index to be higher than header elements */
   backdrop-filter: blur(5px);
+  pointer-events: auto; 
+  touch-action: none;
+  overflow: hidden;
 }
 
 /* Modal content styling */
@@ -21,7 +24,7 @@
   width: 95%;
   max-height: 95vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Changed from column to row for side-by-side layout */
   border-radius: 12px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -43,7 +46,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 2010; /* Increased z-index to be higher than the overlay */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
   color: #222;
@@ -57,14 +60,14 @@
 
 /* Modal image container */
 .modalImageContainer {
-  width: 100%;
+  width: 50%; /* Changed from 100% to 50% for side-by-side layout */
   overflow: hidden;
   background: #FAF9F6; 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
-  margin-top: 15px;
+  padding: 20px;
+  height: 95vh;
 }
 
 /* Modal image styling */
@@ -72,18 +75,20 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-  max-height: 60vh;
+  max-height: 80vh;
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Project info styling */
 .projectInfo {
+  width: 50%; /* Added width for side-by-side layout */
   padding: 25px 30px;
   background: #FAF9F6; 
   overflow-y: auto;
-  max-height: 45vh;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  max-height: 95vh; /* Changed from 45vh to 95vh */
+  border-left: 1px solid rgba(0, 0, 0, 0.05); /* Changed from border-top to border-left */
+  position: relative; /* Added for proper positioning */
 }
 
 .markdownContent h1 {
@@ -133,15 +138,26 @@
   .modalContent {
     width: 98%;
     max-height: 98vh;
+    flex-direction: column; /* Change to column layout on mobile */
+  }
+  
+  .modalImageContainer {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    max-height: 50vh;
   }
   
   .modalImage {
-    max-height: 55vh;
+    max-height: 45vh;
   }
   
   .projectInfo {
+    width: 100%;
     padding: 20px;
-    max-height: 42vh;
+    max-height: 48vh;
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
   
   .projectInfo h2 {
