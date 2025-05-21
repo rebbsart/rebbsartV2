@@ -18,8 +18,8 @@
 
 /* Modal content styling */
 .modalContent {
-  background: #FAF9F6; 
-  color: #5D4037;
+  background: transparent; 
+  color: #ffffff;
   max-width: 1200px;
   width: 95%;
   max-height: 95vh;
@@ -62,7 +62,7 @@
 .modalImageContainer {
   width: 50%; /* Changed from 100% to 50% for side-by-side layout */
   overflow: hidden;
-  background: #FAF9F6; 
+  background: transparent; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +84,7 @@
 .projectInfo {
   width: 50%; /* Added width for side-by-side layout */
   padding: 25px 30px;
-  background: #FAF9F6; 
+  background: transparent; 
   overflow-y: auto;
   max-height: 95vh; /* Changed from 45vh to 95vh */
   border-left: 1px solid rgba(0, 0, 0, 0.05); /* Changed from border-top to border-left */
@@ -96,8 +96,8 @@
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #5D4037;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 10px;
 }
 
@@ -106,12 +106,12 @@
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 8px;
-  color: #5D4037;
+  color: #ffffff;
 }
 
 .markdownContent p {
   line-height: 1.6;
-  color: #5D4037;
+  color: #ffffff;
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
@@ -120,16 +120,18 @@
 .markdownContent ol {
   margin-left: 20px;
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .markdownContent li {
   margin-bottom: 5px;
+  color: #ffffff;
 }
 
 .loading {
   text-align: center;
   padding: 20px;
-  color: #666;
+  color: #ffffff;
   font-style: italic;
 }
 
