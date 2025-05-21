@@ -37,7 +37,7 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: #e7c4a6;
+  background: transparent;
   border: none;
   border-radius: 50%;
   width: 36px;
@@ -46,15 +46,15 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 2010; /* Increased z-index to be higher than the overlay */
+  z-index: 2010;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
-  color: #222;
+  color: #ffffff; 
 }
 
 .closeButton:hover {
-  background: #dbba9d;
-  transform: scale(1.1);
+  color: #d1d1d1; 
+  transform: scale(1.1); 
 }
 
 

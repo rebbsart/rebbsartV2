@@ -40,7 +40,7 @@ export const extractTitle = (markdown) => {
 // Helper function to resolve image paths in markdown
 export const processMarkdownImagePaths = (markdown, projectIndex) => {
   // Handle image paths relative to the project directory
-  // This transforms paths like ![alt](./image.jpg) to the correct webpack path
+  // This transforms paths like ![alt](./image.jpg) or ![alt](./subfolder/image.jpg) to the correct webpack path
   const projectNumber = projectIndex + 1;
   const projectPrefix = projectNumber.toString().padStart(2, '0');
   
@@ -48,7 +48,12 @@ export const processMarkdownImagePaths = (markdown, projectIndex) => {
     /!\[(.*?)\]\((\.\/.*?)\)/g, 
     (match, alt, path) => {
       const imageName = path.replace('./', '');
-      return `![${alt}](${require(`../assets/projects/${imageName}`)})`;
+      try {
+        return `![${alt}](${require(`../assets/projects/${imageName}`)})`;
+      } catch (error) {
+        console.warn(`Failed to load image: ${imageName}`, error);
+        return match; // Return the original match if the image can't be loaded
+      }
     }
   );
 };
